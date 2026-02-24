@@ -1,8 +1,10 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
   const navigate = useNavigate();
+
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#f8f1f5]">
+    <div className="relative h-screen flex justify-center overflow-hidden bg-[#f8f1f5]">
 
       {/* Soft Ambient Glow Layers */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(216,167,177,0.25),transparent_60%)]"></div>
@@ -13,7 +15,7 @@ const Home = () => {
       <div className="absolute w-96 h-96 bg-rose-200/20 rounded-full blur-3xl animate-floatSlow2 bottom-24 right-24"></div>
 
       {/* Hero Content */}
-      <div className="relative text-center max-w-4xl px-6">
+      <div className="relative text-center max-w-4xl px-6 pt-28">
 
         <p className="uppercase tracking-[4px] text-sm text-[#c08497] mb-6 animate-fadeUp">
           A Soft Creative Space
@@ -21,7 +23,7 @@ const Home = () => {
 
         <h1 className="text-5xl md:text-7xl font-serif text-[#4f3f44] leading-tight mb-6 animate-fadeUp">
           Learn Crochet
-          <span className="block text-[#c08497] font-medium">
+          <span className="block text-[#c08497] font-medium mt-2">
             The Cozy Way 🧶
           </span>
         </h1>
@@ -32,14 +34,15 @@ const Home = () => {
         </p>
 
         <button
-  onClick={() => navigate("/learn")}
-  className="bg-[#c08497] text-white px-10 py-4 rounded-full shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
->
-  Start Learning ✨
-</button>
+          onClick={() => navigate("/learn")}
+          className="bg-[#c08497] text-white px-10 py-4 rounded-full shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          Start Learning ✨
+        </button>
+
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
