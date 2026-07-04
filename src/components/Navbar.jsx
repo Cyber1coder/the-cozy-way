@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-5 py-4">
 
         <h1 className="text-lg sm:text-xl font-semibold text-[#4f3f44] whitespace-nowrap">
-          ♡ The Cozy Hook ♡
+          ︵‿︵‿୨♡ Ｔｈｅ Ｃｏｚｙ Ｈｏｏｋ ♡୧‿︵‿︵
         </h1>
 
         {/* Hamburger */}
