@@ -66,6 +66,19 @@ const Navbar = () => {
           Patterns
         </NavLink>
 
+          <NavLink
+  to="/supplies"
+  className={({ isActive }) =>
+    `${baseStyle} ${
+      isActive
+        ? "text-[#a4345d] font-semibold after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-[#b34d73]"
+        : "hover:text-[#c08497]"
+    }`
+  }
+>
+  Essentials
+</NavLink>
+
       </div>
     </nav>
   )

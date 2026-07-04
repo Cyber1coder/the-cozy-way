@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Roadmap from "./pages/Learn"
 import Yarn from "./pages/Yarn"
 import Patterns from "./pages/Patterns"
+import Supplies from "./pages/Supplies"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/learn" element={<Roadmap />} />
         <Route path="/yarn" element={<Yarn />} />
         <Route path="/patterns" element={<Patterns />} />
+        <Route path="/Supplies" element={<Supplies />} />
       </Routes>
     </BrowserRouter>
   )
